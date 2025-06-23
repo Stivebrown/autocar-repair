@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import CallToAction from '../components/CallToAction';
+import Reviews from '../components/Reviews';
+import Gallery from '../components/Gallery';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
+import Chatbot from '../components/Chatbot';
 
 const ContactSection = () => (
   <section id="contact" className="py-24 flex flex-col items-center justify-center bg-white/40 backdrop-blur-lg rounded-3xl mx-4 my-8 shadow-xl">
@@ -24,8 +28,12 @@ const Home = () => (
     <HeroSection />
     <ServicesSection />
     <CallToAction />
+    <Reviews />
+    <Gallery />
+    <FAQ />
     <ContactSection />
     <Footer />
+    <Chatbot />
   </div>
 );
 

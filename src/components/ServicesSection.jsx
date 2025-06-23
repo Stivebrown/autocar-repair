@@ -15,7 +15,11 @@ const ServicesSection = () => (
       <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center drop-shadow-lg">Our Services</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {services.map((service, idx) => (
-          <div key={idx} className="backdrop-blur-lg bg-white/60 border border-blue-200 rounded-2xl p-8 shadow-xl text-center hover:scale-105 transition-transform">
+          <div
+            key={idx}
+            className="backdrop-blur-lg bg-white/60 border border-blue-200 rounded-2xl p-8 shadow-xl text-center transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in-up"
+            style={{ animationDelay: `${idx * 0.1 + 0.2}s` }}
+          >
             <h3 className="text-2xl font-semibold text-blue-700 mb-3">{service.title}</h3>
             <p className="text-blue-600">{service.desc}</p>
           </div>
